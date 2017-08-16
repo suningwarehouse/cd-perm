@@ -1,0 +1,24 @@
+{
+  "name": "@suning/cd-perm",
+  "version": "0.0.25",
+  "description": "cd permission",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --presets es2015-loose,stage-1 --plugins transform-runtime src/ --out-dir lib/ --source-maps",
+    "dev": "export NODE_ENV=development&& webpack-dev-server --debug --display-error-details --history-api-fallback --inline --hot --progress",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yanjie",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "6.x.x",
+    "babel-core": "6.x.x",
+    "babel-plugin-transform-runtime": "6.x.x",
+    "babel-preset-es2015-loose": "6.x.x",
+    "babel-preset-stage-1": "6.x.x"
+  },
+  "dependencies": {
+    "@suning/dubhe-component-http": ">=0.0.41"
+  }
+}
